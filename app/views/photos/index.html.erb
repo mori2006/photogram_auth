@@ -15,6 +15,11 @@
     <div class="panel panel-default">
       <div class="panel-heading">
         <h3 class="panel-title">
+          <%= photo.caption %>
+        </h3>
+      </div>
+      <div class="panel-heading">
+        <h3 class="panel-title">
           <a href="/users/<%= photo.user_id %>"><%= photo.user.username %></a>
           <small>
             <%= time_ago_in_words(photo.created_at) %> ago
@@ -128,6 +133,11 @@
 <div class="row">
   <div class="col-md-8 col-md-offset-2">
     <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">
+          <%= photo.caption %>
+        </h3>
+      </div>
       <div class="panel-heading">
         <h3 class="panel-title">
           <a href="/users/<%= photo.user_id %>"><%= photo.user.username %></a>
